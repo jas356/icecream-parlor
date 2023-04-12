@@ -1,9 +1,10 @@
 import dotenv from 'dotenv'
+import { MongoClient } from "mongodb"
+
 
 dotenv.config()
 const MONGOURI = process.env.MONGOURI
 
-import { MongoClient } from "mongodb"
 
 //create instance of mongo
 export const client = new MongoClient(MONGOURI)
